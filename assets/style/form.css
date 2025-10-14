@@ -38,6 +38,9 @@
   max-width: 600px;
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  
+  max-height: 90vh;
+  overflow-y: auto; 
 }
 
 .modal-content h2 {
@@ -99,4 +102,16 @@
   outline: none;
   border-color: #00CFDE;
   box-shadow: 0 0 10px rgba(0, 207, 222, 0.5);
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 20px;
+    max-height: 85vh;
+  }
+
+  .formulario-modal .form-row {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
