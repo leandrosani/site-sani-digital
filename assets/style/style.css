@@ -488,7 +488,7 @@ main {
 }
 
 /*
-  WHATSAPP SECAO
+  WHATSAPP SEÇÃO
 */
 
 .opacity {
@@ -754,6 +754,10 @@ main {
       margin-top: 40px;
     }
       
+  }
+
+  .whatsapp {
+    right: 0;
   }
 
 }/*max-width: 664px*/
