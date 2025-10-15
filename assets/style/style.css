@@ -737,9 +737,11 @@ main {
     justify-content: center;
     text-align: center;
     gap: 8px;
+    font-size: 18px;
 
     a {
       margin: 0;
+      font-size: 18px;
     }
 
     & .footer-left, 
@@ -749,6 +751,10 @@ main {
         justify-content: center;
         align-items: center;
       }
+
+    & .footer-left {
+      gap: 8px;
+    }  
 
     & .footer-right {
       margin-top: 40px;
