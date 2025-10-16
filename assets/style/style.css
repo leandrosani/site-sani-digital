@@ -83,6 +83,11 @@ h2 {
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+.link-whtasapp {
+  margin: 0;
+  padding: 0;
+  color: #24d465;
+}
 
 .btn-budget {
   color: #333742;
