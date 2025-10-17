@@ -160,3 +160,66 @@ section#contact {
 footer#footer {
   width: 100%;
 }
+
+@media (max-width: 480px){
+  
+  header#primary{
+    margin-bottom: 0px;
+
+    & >div {
+      margin-block: 50px;
+    }
+
+    & .contain-img {
+      margin-bottom: 25px;
+    }
+
+    & .content {
+      margin-block: 40px;
+    }
+
+    & h1 {
+      font-size: 32px;
+      background-color: #292c34ad;
+      padding: 14px;
+      border-radius: 8px;
+    }
+
+    & p {
+      background-color: #292c34ad;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+  }
+
+  main #work {
+    margin-bottom: 50px;
+
+    & header {
+      margin-bottom: 20px;
+    }
+  }
+
+  main #services {
+      padding-bottom: 50px;
+
+      & header {
+        margin-block: 50px;
+      }
+
+      h2 {
+        margin: 0px;
+      }
+    }
+
+  main #contact {
+    margin-block: 50px;
+
+    & >div {
+      margin-top: 0px;
+    }
+  }
+  
+
+}

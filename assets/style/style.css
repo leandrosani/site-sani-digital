@@ -169,6 +169,9 @@ main {
     justify-content: center;
     color: #CCD6F6;
     margin-top: 178px;
+    background-image: url("../Background_Intro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     & .section-l {
       width: 502px;
@@ -196,7 +199,12 @@ main {
         display: flex;
         justify-content: space-between;
         margin-block: 30px;
+
+      & .btn-port{
+        border-radius: 6px;
+        margin-right: 0px;
       }
+    }
   }
 
   & #section-2 {
@@ -304,6 +312,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("../Background_Contacts.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
   & .contact-wrap {
     display: flex;
@@ -635,7 +647,8 @@ main {
   }
 
   .list a {
-    font-size: 14px;
+    margin-right: 16px;
+    font-size: 15px;
   }
 
   .desktop-header {
