@@ -1,18 +1,4 @@
-/*
-
-Azul Destaque (Ciano): #00CFDE
-Fundo Escuro (Grafite Azulado): #020C1B
-Texto Claro (Quase Branco): #CCD6F6
-Fundo Claro (Cinza Suave): #F8F9FA
-Texto Escuro (Grafite Principal): #333742
-
-Icon #006DF0
-
-
-*/
-
 @import url('form.css');
-@import url('portifolio.css');
 
 * {
   padding: 0;
@@ -61,6 +47,7 @@ body {
 li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
   color: inherit; /* Herda a cor do elemento pai */
@@ -315,7 +302,6 @@ main {
   background-image: url("../Background_Contacts.png");
   background-repeat: no-repeat;
   background-size: cover;
-
 
   & .contact-wrap {
     display: flex;

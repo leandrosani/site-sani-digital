@@ -1,7 +1,9 @@
+
 #primary {
   background-image: url("../../Background_Intro.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin-bottom: 120px;
 
   div p {
@@ -24,14 +26,15 @@
   .contain-img {
     height: 96px;
     width: 96px;
-    border: 2px solid var(--red);
+    border: 2px solid #00848d;
     border-radius: 100%;
     margin-bottom: 56px;
     position: relative;
 
-    background-image: url('../../Eu\ linkedin.jpg');
+    background-image: url('../../minha.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center -12px;
+    background-position: center;
     
 
     .icon {
@@ -88,14 +91,22 @@
     text-align: center;
     padding-inline: 40px;
 
+    h1 {
+      margin: 0;
+    }
+
     .container {
       margin-inline: 40px;
     }
 
-    p,
-    span {
+    p{
       font-size: 18px;
       color:rgb(215, 220, 224);
+    }
+
+    span.red {
+      font-size: 18px;
+      color: #E3646E;
     }
   }
 }

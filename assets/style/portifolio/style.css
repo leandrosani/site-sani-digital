@@ -1,0 +1,413 @@
+/* Cores principais */
+:root {
+--azul-destaque: #00CFDE;
+--fundo-escuro: #020C1B;
+--texto-claro: #CCD6F6;
+--fundo-claro: #F8F9FA;
+--texto-escuro: #333742;
+}
+
+/* Reset e base */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
+}
+
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 150px;
+}
+
+body {
+background: #0d1320;
+line-height: 1.5;
+color: var(--texto-claro);
+}
+
+/* Estruturas principais */
+.container-row,
+.container-column {
+width: 100%;
+max-width: 1280px;
+padding-inline: 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.container-column {
+flex-direction: column;
+}
+
+/* Cabeçalho */
+.desktop-header {
+position: fixed;
+top: 0;
+width: 100%;
+height: 80px;
+background-color: #1a1f2c;
+border-bottom: 2px solid #00cfde8a;
+display: flex;
+justify-content: center;
+z-index: 200;
+}
+
+.desktop-header ul {
+display: flex;
+gap: 32px;
+color: #fff;
+font-size: 18px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+li {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+padding: 5px 10px;
+border-radius: 4px;
+transition: 0.3s;
+}
+
+a:hover {
+color: var(--azul-destaque);
+box-shadow: 0 0 10px rgba(0,207,222,0.4);
+}
+
+/* Botão de orçamento */
+.btn-budget {
+background-color: var(--azul-destaque);
+color: var(--texto-escuro);
+padding: 12px;
+border-radius: 6px;
+border: 2px solid var(--azul-destaque);
+cursor: pointer;
+transition: 0.3s;
+}
+
+.btn-budget:hover {
+background-color: transparent;
+color: var(--azul-destaque);
+transform: translateY(-3px);
+box-shadow: 0 0 25px rgba(0,207,222,1),
+0 0 50px rgba(0,207,222,0.8);
+}
+
+.btn-budget p {
+font-weight: bold;
+}
+
+/* Seções principais */
+h1 {
+color: #fff;
+font-size: 38px;
+margin-bottom: 36px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+h2 {
+font-size: 32px;
+color: #fff;
+text-align: center;
+margin-bottom: 60px;
+}
+
+.color-red {
+color: #00CFDE;
+}
+
+.sub-header {
+color: #CCD6F6;
+font-weight: 500;
+}
+
+/* Projetos */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 24px;
+}
+
+.grid article {
+background-color: #1a1f2c;
+border-radius: 12px;
+overflow: hidden;
+transition: 0.3s;
+}
+
+.grid article:hover {
+transform: translateY(-6px);
+box-shadow: 0 0 20px rgba(0,207,222,0.4);
+}
+
+.grid img {
+width: 100%;
+display: block;
+}
+
+.grid h3 {
+color: #fff;
+margin: 12px 0 6px 0;
+}
+
+.grid p {
+color: #CCD6F6;
+font-size: 14px;
+}
+
+/* Serviços */
+#services article {
+background-color: #1a1f2c;
+color: #fff;
+border-radius: 10px;
+padding: 20px;
+width: 280px;
+text-align: center;
+transition: 0.3s;
+}
+
+#services article:hover {
+transform: translateY(-5px);
+box-shadow: 0 0 20px rgba(0,207,222,0.4);
+}
+
+#services img {
+width: 60px;
+margin-bottom: 10px;
+}
+
+/* Contato */
+#contact {
+background-color: #0d1320;
+text-align: center;
+padding: 80px 20px;
+}
+
+#contact article {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 240px;
+background-color: #1a1f2c;
+color: #fff;
+border: 2px solid #00cfde8a;
+border-radius: 8px;
+padding: 14px 18px;
+margin: 10px 0;
+transition: 0.3s;
+}
+
+#contact article:hover {
+transform: translateY(-3px);
+box-shadow: 0 0 15px rgba(0,207,222,0.5);
+}
+
+#contact .seta {
+width: 14px;
+}
+
+/* Rodapé */
+#footer {
+background-color: #1a1f2c;
+border-top: 2px solid #00cfde8a;
+color: #CCD6F6;
+padding-block: 30px;
+}
+
+.footer-wrap {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+width: 100%;
+margin-bottom: 60px;
+}
+
+.footer-left,
+.footer-mid,
+.footer-right {
+max-width: 33.33%;
+}
+
+.footer-mid ul {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+/* WhatsApp */
+.whatsapp {
+position: fixed;
+bottom: 40px;
+right: 40px;
+cursor: pointer;
+height: 80px;
+width: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.whatsapp-img {
+width: 60px;
+transition: 0.3s;
+}
+
+.whatsapp-img:hover {
+width: 70px;
+}
+
+.whatsapp-wrap {
+position: fixed;
+bottom: 40px;
+right: 40px;
+width: 300px;
+height: 220px;
+background-color: #DCEFF5;
+border: 2px solid #1b9748ad;
+border-radius: 20px;
+overflow: hidden;
+transition: 0.3s;
+}
+
+.opacity {
+opacity: 0;
+pointer-events: none;
+width: 0;
+height: 0;
+}
+
+.whatsapp-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #24d465;
+color: #fff;
+padding: 20px;
+height: 60px;
+border-bottom: 2px solid #1b9748ad;
+}
+
+.whatsapp-section {
+padding: 10px;
+font-size: 12px;
+color: var(--texto-escuro);
+}
+
+.whatsapp-message {
+background-color: #dcf8c6;
+padding: 10px 15px;
+border-radius: 15px 15px 0 15px;
+margin-bottom: 42px;
+}
+
+.whatsapp-btn {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #24d465;
+color: #fff;
+border-radius: 30px;
+width: 180px;
+height: 45px;
+border: 2px solid #1b9748ad;
+transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+transform: translateY(-3px);
+border: 2px solid #1f971b;
+}
+
+.whatsapp-btn img {
+width: 30px;
+margin-left: 10px;
+}
+
+/* Modal orçamento */
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+background: #fff;
+border-radius: 10px;
+padding: 30px;
+max-width: 600px;
+width: 90%;
+color: #333;
+}
+
+.close-button {
+position: absolute;
+right: 20px;
+top: 15px;
+background: none;
+border: none;
+font-size: 28px;
+cursor: pointer;
+}
+
+.formulario-modal label {
+display: block;
+margin-bottom: 6px;
+font-weight: bold;
+}
+
+.formulario-modal input,
+.formulario-modal textarea,
+.formulario-modal select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 6px;
+margin-bottom: 18px;
+}
+
+.botao-principal {
+background-color: #00CFDE;
+color: #333;
+border: 2px solid #00CFDE;
+padding: 12px;
+border-radius: 6px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.botao-principal:hover {
+background-color: transparent;
+color: #00CFDE;
+box-shadow: 0 0 20px rgba(0,207,222,0.5);
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+.desktop-header {
+display: none;
+}
+h1 {
+font-size: 28px;
+}
+.grid {
+grid-template-columns: 1fr;
+}
+#footer .footer-wrap {
+flex-direction: column;
+gap: 30px;
+align-items: center;
+}
+}
